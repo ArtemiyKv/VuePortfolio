@@ -27,7 +27,7 @@ const isButtonBlack = computed(()=>{
 </template>
 
 <style lang="scss" scoped>
-@use "/assets/scss/button";
+@use "/assets/scss/app/button";
 
 
 </style>

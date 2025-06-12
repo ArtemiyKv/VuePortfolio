@@ -1,6 +1,7 @@
 <template>
   <div>
-    <p>123123</p>
+    <AppAbout/>
+    <AppSkills/>
   </div>
 </template>
 

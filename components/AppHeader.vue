@@ -37,9 +37,9 @@ function hamburgerClosureHandler() {
                 <a href="#projects" target="_blank">Projects</a>
                 <a href="#contacts" target="_blank">Contact</a>
             </div>
-            <div class="header__resume">
+            <!-- <div class="header__resume">
                 <AppButton :pic="true" :label="'Resume'" :color="'black'" />
-            </div>
+            </div> -->
             <div class="header__hamburger" v-on:click="hamburgerStateSwitch">
                 <div class="span__container" :class="{ active: hamburgerState }">
                     <span></span>
@@ -55,7 +55,7 @@ function hamburgerClosureHandler() {
                 <a href="#about" target="_blank">About</a>
                 <a href="#projects" target="_blank">Projects</a>
                 <a href="#contacts" target="_blank">Contact</a>
-                <AppButton :pic="true" :label="'Resume'" :color="'black'" />
+                <!-- <AppButton :pic="true" :label="'Resume'" :color="'black'" /> -->
             </div>
         </section>
     </nav>
@@ -64,5 +64,5 @@ function hamburgerClosureHandler() {
 
 
 <style lang="scss" scoped>
-@use "/assets/scss/header"
+@use "/assets/scss/app/header";
 </style>

@@ -1,0 +1,19 @@
+.skills {
+  text-align: center;
+  h1 {
+    b {
+        font-weight: 700;
+      }
+  }
+  &__icons {
+    display: flex;
+
+    & .item {
+      flex-basis: 20%;
+      flex-wrap: wrap;
+      padding: 2rem;
+      border: 2px solid black;
+      border-radius: 0.375rem;
+    }
+  }
+}
