@@ -2,10 +2,13 @@
   <div>
     <AppAbout/>
     <AppSkills/>
+    <AppExperience/>
   </div>
 </template>
 
 <script lang="ts" setup>
+import AppExperience from '~/components/AppExperience.vue';
+
 
 </script>
 

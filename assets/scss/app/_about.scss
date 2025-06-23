@@ -3,7 +3,8 @@
   color: rgb(113 113 122);
   display: flex;
   margin: 0 auto;
-  justify-content: center;
+  justify-content: space-between;
+  box-sizing: border-box;
   align-items: center;
   padding: 1rem;
   &__text {
