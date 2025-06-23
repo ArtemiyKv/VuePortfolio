@@ -4,32 +4,26 @@
       <h1>
         My <b>Experience</b>
       </h1>
-      <div class="item">
+      <div class="item" v-for="item in experience">
         <div class="item__title">
-          <h2>Media designer</h2>
-          <span>Nov 2023 – Present</span>
+          <h2>{{item?.name}}</h2>
+          <span>{{item?.date}}</span>
         </div>
-        <p>I create a design for the Instagram account, where I prepare posts and videos to engage the community and share updates. Additionally, I create flyers for print and produce promotional videos.</p>
-      </div>
-      <div class="item">
-        <div class="item__title">
-          <h2>Media designer</h2>
-          <span>Nov 2023 – Present</span>
-        </div>
-        <p>I create a design for the Instagram account, where I prepare posts and videos to engage the community and share updates. Additionally, I create flyers for print and produce promotional videos.</p>
-      </div>
-      <div class="item">
-        <div class="item__title">
-          <h2>Media designer</h2>
-          <span>Nov 2023 – Present</span>
-        </div>
-        <p>I create a design for the Instagram account, where I prepare posts and videos to engage the community and share updates. Additionally, I create flyers for print and produce promotional videos.</p>
+        <p>{{item?.text}}</p>
       </div>
     </div>
   </section>
 </template>
 
 <script lang="ts" setup>
+import type { PropType } from 'vue';
+import type { ExperienceResponse } from '~/contracts/experienceResponseType';
+
+defineProps({
+  experience: {
+    type: Array as PropType<Array<ExperienceResponse>>
+  }
+})
 </script>
 
 <style lang="scss" scoped>
