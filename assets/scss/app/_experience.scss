@@ -39,10 +39,31 @@
         line-height: 1.25rem;
         letter-spacing: 0.02em;
       }
-      &:hover{
-        border-color:  rgb(67, 67, 67);
-        background:  rgb(67, 67, 67);
+      &:hover {
+        border-color: rgb(67, 67, 67);
+        background: rgb(67, 67, 67);
       }
     }
   }
+}
+@media (max-width: 1024px) {
+}
+@media (max-width: 600px) {
+.exp {
+  &__wrapper {
+    h1 {
+      margin-bottom: 1rem;
+    }
+    & .item {
+      padding: 1rem;
+      &__title {
+        flex-direction: column;
+        h2 {
+          font-size: 1rem;
+
+        }
+      }
+    }
+  }
+}
 }

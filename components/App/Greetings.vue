@@ -28,5 +28,5 @@
 </script>
 
 <style lang="scss" scoped>
-@use "/assets/scss/app/about";
+@use "/assets/scss/app/greetings";
 </style>

@@ -1,5 +1,7 @@
 export interface ExperienceResponse{
-  name: String,
-  date: String,
-  text: String,
+  body: {
+    name: String,
+    date: String,
+    text: String,
+  }
 }

@@ -5,9 +5,13 @@ export default defineContentConfig({
     experience: defineCollection({
       type: 'data',
       schema: z.object({
-        name: z.string(),
-        date: z.string(),
-        text: z.string()
+        body: z.array(
+          z.object({
+            name: z.string(),
+            date: z.string(),
+            text: z.string(),
+          })
+        )
       }),
       source: 'experience/**.yaml'
     })

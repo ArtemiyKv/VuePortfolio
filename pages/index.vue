@@ -1,17 +1,17 @@
 <template>
   <div>
-    <AppAbout/>
+    <AppGreetings/>
     <AppSkills/>
-    <AppExperience :experience="experience?.meta.body"/>
+    <AppExperience :experience="experience"/>
+    <AppAbout/>
   </div>
-  {{ experience?.meta.body }}
 </template>
 
 <script lang="ts" setup>
-import AppExperience from '~/components/AppExperience.vue';
+import AppExperience from '~/components/App/Experience.vue';
 import type { ExperienceResponse } from '~/contracts/experienceResponseType';
 
-const {data: experience} = await useAsyncData('123', (): Promise<ExperienceResponse[]>=>{
+const {data: experience} = await useAsyncData('exp-content', (): Promise<Array<ExperienceResponse> | null> =>{
   return queryCollection('experience').first()
 })
 </script>

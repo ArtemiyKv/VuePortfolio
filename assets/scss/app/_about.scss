@@ -1,75 +1,66 @@
 .about {
-  max-width: 1284px;
-  color: rgb(113 113 122);
-  display: flex;
-  margin: 0 auto;
-  justify-content: space-between;
-  box-sizing: border-box;
-  align-items: center;
-  padding: 1rem;
-  &__text {
-    flex-basis: 50%;
-    h1 {
-      font-size: 3rem;
-      line-height: 3.5rem;
-      letter-spacing: -0.02em;
-      font-weight: 300;
-      b {
-        font-weight: 700;
+  &__wrapper {
+
+    max-width: 1284px;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    margin: 0 auto;
+    box-sizing: content-box;
+    & .image {
+      flex-basis: 30%;
+      img {
+        width: 100%;
       }
-      span:first-of-type {
-        font-weight: 700;
-        text-decoration: underline;
-        text-decoration-thickness: 8px;
-      }
-      span:last-of-type {
-        font-weight: 700;
-        color: white;
-        background-color: black;
-        border-radius: 0.25rem;
-        padding: 0 0.5rem;
-      }
+  
     }
-
-    p {
-      font-size: 1.25rem;
-      line-height: 1.5rem;
-      letter-spacing: 0.02em;
-      a {
-        font-size: 1.25rem;
-        text-decoration: none;
-        color: rgb(0 0 0/80%);
-        transition: all 0.25s ease-in-out;
-
-        &:hover {
-          color: black;
+    & .text {
+      flex-basis: 60%;
+      h1 {
+        letter-spacing: -0.02em;
+        margin-bottom: 0;
+        b {
+          font-weight: 700;
         }
       }
-    }
-    &__buttons {
-      display: flex;
-      gap: 1rem;
-      padding: 1rem 0;
-    }
-  }
-  &__image {
-    flex-basis: 40%;
-    img {
-      width: 100%;
+      p {
+        color: rgb(113 113 122);
+        font-weight: 300;
+        font-size: 1.25rem;
+      }
     }
   }
 }
 
-@media (max-width: 864px) {
+@media (max-width:1024px) {
   .about {
-    flex-direction: column-reverse;
-    &__text {
-      padding: 1rem 2rem;
+    &__wrapper {
+      flex-direction: column;
+      width: 100%;
+      margin: 0 auto
     }
-    &__image {
-      text-align: center;
-      img {
+  }
+}
+
+@media (max-width:864px) {
+  .about {
+    &__wrapper {
+      flex-direction: column;
+      width: 100%;
+      margin: 0 auto;
+      & .image {
         width: 80%;
+      }
+      & .text {
+        h1 {
+          text-align: center;
+          margin-top: 0;
+        }
+        p {
+          font-size: 1rem;
+        }
       }
     }
   }
