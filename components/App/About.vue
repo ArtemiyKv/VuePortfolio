@@ -34,5 +34,5 @@
 </script>
 
 <style scoped lang="scss">
-@use "/assets/scss/app/about"
+@use "/assets/scss/app/about";
 </style>
