@@ -2,7 +2,7 @@
   <article class="about__wrapper">
   
     <div class="image">
-      <img src="/public/images/girl_about.svg">
+      <img src="/images/girl_about.svg">
     </div>
     <div class="text">
       <h1>

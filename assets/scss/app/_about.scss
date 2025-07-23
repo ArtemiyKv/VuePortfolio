@@ -6,7 +6,6 @@
     gap: 1rem;
     align-items: center;
     justify-content: space-between;
-    //padding: 1rem;
     margin: 0 auto;
     box-sizing: content-box;
     & .image {
@@ -40,6 +39,12 @@
       flex-direction: column;
       width: 100%;
       margin: 0 auto;
+      padding: 2rem 0;
+      & .image {
+        img {
+          max-width: 600px;
+        }
+      }
       & .text  {
         padding: 1rem;
       }

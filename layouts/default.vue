@@ -1,8 +1,9 @@
 <template>
   <AppHeader/>
-<div>
+  <div>
     <NuxtPage/>
   </div>
+  <AppFooter/>
 </template>
 
 <script lang="ts" setup>

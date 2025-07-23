@@ -1,18 +1,24 @@
 <template>
   <div>
-    <AppGreetings/>
-    <AppSkills/>
-    <AppExperience :experience="experience"/>
-    <AppAbout/>
+    <MainGreetings/>
+    <MainSkills/>
+    <MainExperience :experience="experience"/>
+    <MainAbout/>
+    <MainProjects :projects="projects"/>
   </div>
 </template>
 
 <script lang="ts" setup>
-import AppExperience from '~/components/App/Experience.vue';
-import type { ExperienceResponse } from '~/contracts/experienceResponseType';
+import AppExperience from '~/components/Main/Experience.vue';
+import type {ExperienceResponse} from '~/contracts/experienceResponseType';
+import type {ProjectResponseType} from "~/contracts/projectResponseType";
 
-const {data: experience} = await useAsyncData('exp-content', (): Promise<Array<ExperienceResponse> | null> =>{
+const {data: experience} = await useAsyncData('exp-content', (): Promise<Array<ExperienceResponse> | null> => {
   return queryCollection('experience').first()
+})
+
+const {data: projects} = await useAsyncData('projects-content', (): Promise<Array<ProjectResponseType> | null> => {
+  return queryCollection('projects').first()
 })
 </script>
 
