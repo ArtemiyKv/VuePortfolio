@@ -3,10 +3,11 @@ nav {
   width: 100%;
   background-color: white;
   transition: all 0.3s ease-in-out;
+  border-bottom: 1px solid black;
 
   &.underline {
     width: 100%;
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid black;
   }
 
   & .header {
@@ -22,6 +23,8 @@ nav {
       display: flex;
       gap: 0.85rem;
       align-items: center;
+      text-decoration: none;
+      color: black;
 
       & img {
         width: 2rem;
@@ -31,6 +34,12 @@ nav {
       & p {
         font-size: 1.125rem;
         font-variation-settings: "wght" 700;
+        transition: text-shadow 200ms ease;
+      }
+      &:hover {
+        p {
+          text-shadow: 0 0 20px grey;
+        }
       }
     }
 

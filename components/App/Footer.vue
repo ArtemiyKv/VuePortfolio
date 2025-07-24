@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <footer>
+  <article>
     <h1>
       Let's <span>talk</span> for<br>Something special
     </h1>
@@ -26,7 +26,7 @@
     </div>
     <blockquote>
     </blockquote>
-  </footer>
+  </article>
 </template>
 
 <style scoped lang="scss">

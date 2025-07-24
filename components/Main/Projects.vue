@@ -24,7 +24,7 @@ defineProps({
       <h2>{{ project.index }}</h2>
       <h2>{{ project.title }}</h2>
       <p>{{project.text}}</p>
-      <a :href="project.link" target="_blank"><img src="/images/linkWhite.svg">Visit project</a>
+      <nuxt-link :to="project.link" ><img src="/images/linkWhite.svg">Visit project</nuxt-link>
     </div>
   </div>
 </article>

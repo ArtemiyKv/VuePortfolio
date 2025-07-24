@@ -4,6 +4,9 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ['assets/scss/main.scss'],
   pages: true,
+  app: {
+    pageTransition: { name: 'page', mode: 'out-in' }
+  },
   modules: [
     '@nuxt/content',
     '@nuxt/fonts',
