@@ -5,8 +5,11 @@ export default defineNuxtConfig({
   css: ['assets/scss/main.scss'],
   pages: true,
   app: {
-    pageTransition: { name: 'page', mode: 'out-in' }
+    pageTransition: { name: 'page', mode: 'out-in' },
+    baseURL: '/VuePortfolio', // Replace with your repository name
+    buildAssetsDir: 'assets',
   },
+  ssr: true,
   modules: [
     '@nuxt/content',
     '@nuxt/fonts',
