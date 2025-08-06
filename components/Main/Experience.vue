@@ -1,5 +1,5 @@
 <template>
-  <section class="exp">
+  <section class="exp" id="experience">
     <div class="exp__wrapper">
       <h1>
         My <b>Experience</b>
@@ -27,5 +27,5 @@ defineProps({
 </script>
 
 <style lang="scss" scoped>
-@use "/assets/scss/app/experience"
+@use "/assets/scss/app/experience";
 </style>

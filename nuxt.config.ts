@@ -1,14 +1,16 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2025-05-15',
-  devtools: { enabled: true },
+  devtools: { enabled: false },
   css: ['assets/scss/main.scss'],
   pages: true,
   app: {
     pageTransition: { name: 'page', mode: 'out-in' },
-    baseURL: '/VuePortfolio', // Replace with your repository name
-    buildAssetsDir: 'assets',
+    layoutTransition: true,
+    // baseURL: '/VuePortfolio', // Replace with your repository name,
+    // buildAssetsDir: 'assets',
   },
+
   ssr: true,
   modules: [
     '@nuxt/content',

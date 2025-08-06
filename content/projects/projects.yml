@@ -1,7 +1,7 @@
 body:
   - title: 'Figma Portfolio'
     index: '01'
-    text: 'Recently, I developed an interest in web design as well. I already have basic skills in this area and am currently undergoing additional training to improve them. I aim to create user-friendly and visually appealing interfaces, design responsive layouts, apply UX/UI principles effectively, work with tools like Figma or Adobe XD, and deepen my understanding of HTML, CSS, and web development processes. These are my first works, including some training projects.'
+    text: 'Recently, I began exploring web design through prototyping. I’ve worked on my first interface prototypes, including training projects, using tools like Figma and Adobe XD. These early experiences helped me understand the basics of creating user-friendly layouts and applying fundamental UX/UI principles.'
     img: 'project1'
     link: '/figma'
   - title: '3D and 2D design'

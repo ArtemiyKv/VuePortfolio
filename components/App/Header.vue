@@ -60,16 +60,16 @@ function scrollHandler() {
 <template>
   <nav>
     <section class="header">
-        <nuxt-link to="/" class="header__logo">
+        <a href="/" class="header__logo">
         <img src="/public/images/jo_logo.svg">
         <p>Avila Reese</p>
-        </nuxt-link>
+        </a>
       <div class="header__links">
-        <a href="#skills" target="_blank">Skills</a>
-        <a href="#experience" target="_blank">Experience</a>
-        <a href="#about" target="_blank">About</a>
-        <a href="#projects" target="_blank">Projects</a>
-        <a href="#contacts" target="_blank">Contact</a>
+        <a href="/#skills" >Skills</a>
+        <a href="/#experience" >Experience</a>
+        <a href="/#about" >About</a>
+        <a href="/#projects" >Projects</a>
+        <a href="/#contacts" >Contact Me</a>
       </div>
       <div class="header__hamburger" v-on:click="hamburgerStateSwitch">
         <div class="span__container" :class="{ active: hamburgerState }">
@@ -81,11 +81,11 @@ function scrollHandler() {
     </section>
     <section class="mobile-menu" :class="{ active: hamburgerState }">
       <div class="mobile-menu__links">
-        <a href="#skills" target="_blank">Skills</a>
-        <a href="#experience" target="_blank">Experience</a>
-        <a href="#about" target="_blank">About</a>
-        <a href="#projects" target="_blank">Projects</a>
-        <a href="#contacts" target="_blank">Contact</a>
+        <a href="/#skills" target="_blank">Skills</a>
+        <a href="/#experience" target="_blank">Experience</a>
+        <a href="/#about" target="_blank">About</a>
+        <a href="/#projects" target="_blank">Projects</a>
+        <a href="/#contacts" target="_blank">Contact</a>
       </div>
     </section>
   </nav>

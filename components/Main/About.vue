@@ -1,8 +1,8 @@
 <template>
-  <article class="about__wrapper">
+  <article class="about__wrapper" id="about">
   
     <div class="image">
-      <img src="/images/girl_about.svg">
+      <img src="/images/girl_about.png">
     </div>
     <div class="text">
       <h1>

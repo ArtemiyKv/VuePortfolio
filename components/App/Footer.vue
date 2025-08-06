@@ -12,11 +12,11 @@
       solutions
     </p>
 
-    <div class="footer__contacts">
+    <div class="footer__contacts" id="contacts">
       <a href="mailto:avila.reese.ma@gmail.com">
         avila.reese.ma@gmail.com
       </a>
-      <app-button :label="'Get In Touch'" :color="'black'"/>
+
     </div>
     <div class="footer__logo">
       <a>

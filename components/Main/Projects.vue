@@ -1,18 +1,18 @@
 <script setup lang="ts">
 
 import type {PropType} from "vue";
-import type {ProjectResponseType} from "~/contracts/projectResponseType";
+import type {MyProjectsResponseType} from "~/contracts/MyProjectsResponseType";
 
 defineProps({
   projects: {
-    type: Array as PropType<Array<ProjectResponseType>>
+    type: Array as PropType<Array<MyProjectsResponseType>>
   }
 })
 
 </script>
 
 <template>
-<article class="projects">
+<article class="projects" id="projects">
   <h1 class="article-title">
     My <b>Projects</b>
   </h1>
@@ -24,7 +24,7 @@ defineProps({
       <h2>{{ project.index }}</h2>
       <h2>{{ project.title }}</h2>
       <p>{{project.text}}</p>
-      <nuxt-link :to="project.link" ><img src="/images/linkWhite.svg">Visit project</nuxt-link>
+      <nuxt-link :to="`${project.link}`" ><img src="/images/linkWhite.svg">Visit project</nuxt-link>
     </div>
   </div>
 </article>

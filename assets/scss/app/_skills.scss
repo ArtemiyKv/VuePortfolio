@@ -3,6 +3,8 @@
   max-width: 1248px;
   padding: 1.5rem 1rem;
   margin: 0 auto;
+  scroll-margin-top:66px;
+
 
   s h1 {
     b {
@@ -33,13 +35,13 @@
         letter-spacing: -0.02em;
       }
 
-      &:hover {
-        background: black;
-
-        .icon, span {
-          color: white;
-        }
-      }
+      //&:hover {
+      //  background: black;
+      //
+      //  .icon, span {
+      //    color: white;
+      //  }
+      //}
     }
   }
 

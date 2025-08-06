@@ -29,6 +29,25 @@ export default defineContentConfig({
                 )
             }),
             source: 'projects/projects.yml',
+        }),
+        project: defineCollection({
+            type: 'data',
+            source: 'projects/**.yml',
+            schema: z.object({
+                title: z.string(),
+                slug: z.string(),
+                content: z.array(z.object({
+                    text: z.string(),
+                    image: z.string(),
+                    image_mobile: z.string(),
+                    is_video: z.boolean(),
+                    video: z.string(),
+                    video_mobile: z.string(),
+                    is_animation: z.boolean(),
+                    animation: z.string(),
+                    animation_mobile: z.string()
+                }))
+            })
         })
     }
 })

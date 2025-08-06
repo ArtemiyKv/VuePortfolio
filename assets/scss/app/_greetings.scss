@@ -19,15 +19,22 @@
       }
       span:first-of-type {
         font-weight: 700;
-        text-decoration: underline;
-        text-decoration-thickness: 8px;
+        //text-decoration: underline;
+        //text-decoration-thickness: 8px;
       }
       span:last-of-type {
         font-weight: 700;
-        color: white;
-        background-color: black;
-        border-radius: 0.25rem;
-        padding: 0 0.5rem;
+        //color: white;
+        //background-color: black;
+        //border-radius: 0.25rem;
+        //padding: 0 0.5rem;
+
+          color: white; /* Text color */
+          text-shadow:
+                  -1px -1px 0 black,  /* Top-left shadow */
+                  1px -1px 0 black,   /* Top-right shadow */
+                  -1px 1px 0 black,   /* Bottom-left shadow */
+                  1px 1px 0 black;    /* Bottom-right shadow */
       }
     }
 

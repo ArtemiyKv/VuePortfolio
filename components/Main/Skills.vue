@@ -1,10 +1,9 @@
 <template>
-  <section class="skills">
+  <section class="skills" id="skills">
     <h1>
       My <b>Skills</b>
     </h1>
     <div class="skills__icons">
-
       <div v-for="(icon, key) in skills" :key="key" class="item">
         <div v-html="icon.img" class="icon">
 
@@ -45,5 +44,5 @@ const skills: { name: string, img: string }[] = [
 </script>
 
 <style lang="scss" scoped>
-@use "/assets/scss/app/skills"
+@use "/assets/scss/app/skills";
 </style>

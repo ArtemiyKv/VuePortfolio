@@ -11,13 +11,13 @@
 <script lang="ts" setup>
 import AppExperience from '~/components/Main/Experience.vue';
 import type {ExperienceResponse} from '~/contracts/experienceResponseType';
-import type {ProjectResponseType} from "~/contracts/projectResponseType";
+import type {MyProjectsResponseType} from "~/contracts/MyProjectsResponseType";
 
-const {data: experience} = await useAsyncData('exp-content', (): Promise<Array<ExperienceResponse> | null> => {
+const {data: experience} = await useAsyncData('exp-content', () => {
   return queryCollection('experience').first()
 })
 
-const {data: projects} = await useAsyncData('projects-content', (): Promise<Array<ProjectResponseType> | null> => {
+const {data: projects} = await useAsyncData('projects-content', () => {
   return queryCollection('projects').first()
 })
 </script>
