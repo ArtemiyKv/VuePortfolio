@@ -10,9 +10,12 @@ console.log(getPath.value)
 const {data: projectContent} = useAsyncData('project-content', () => queryCollection('project').where('slug', '=', getPath.value).first())
 console.log(projectContent)
 
-// onMounted(()=>{
-//   window.scrollTo(0, 0)
-// })
+onMounted(()=>{
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+})
 
 </script>
 
@@ -29,8 +32,4 @@ console.log(projectContent)
 
 <style scoped lang="scss">
 @use "assets/scss/slug/slug";
-
-section {
-  padding-top: 76px;
-}
 </style>

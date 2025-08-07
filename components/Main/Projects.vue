@@ -5,7 +5,8 @@ import type {MyProjectsResponseType} from "~/contracts/MyProjectsResponseType";
 
 defineProps({
   projects: {
-    type: Array as PropType<Array<MyProjectsResponseType>>
+    type: Object as () => MyProjectsResponseType,
+    // type: Array as PropType<Array<MyProjectsResponseType>>
   }
 })
 

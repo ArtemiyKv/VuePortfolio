@@ -5,5 +5,5 @@ export interface MyProjectsResponseType {
         img: string,
         link: string,
         index: string
-    }
+    }[]
 }

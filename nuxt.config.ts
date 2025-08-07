@@ -10,7 +10,6 @@ export default defineNuxtConfig({
     // baseURL: '/VuePortfolio', // Replace with your repository name,
     // buildAssetsDir: 'assets',
   },
-
   ssr: true,
   modules: [
     '@nuxt/content',
