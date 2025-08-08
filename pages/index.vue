@@ -1,5 +1,6 @@
 <template>
   <div>
+    666
     <MainGreetings/>
     <MainSkills/>
     <MainExperience :experience="experience"/>

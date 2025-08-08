@@ -7,8 +7,8 @@ export default defineNuxtConfig({
   app: {
     pageTransition: { name: 'page', mode: 'out-in' },
     layoutTransition: true,
-    // baseURL: '/VuePortfolio', // Replace with your repository name,
-    // buildAssetsDir: 'assets',
+    baseURL: '/VuePortfolio', // Replace with your repository name,
+    buildAssetsDir: 'assets',
   },
   ssr: true,
   modules: [
